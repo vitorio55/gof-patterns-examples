@@ -18,7 +18,7 @@ public class AbstractFactoryExample implements Example {
             new SecondConcreteFactory()
         );
 
-        System.out.println("* Factories will not create their product lines...");
+        System.out.println("* Factories will now create their product lines...");
         factories.forEach(factory -> {
             factory.createProductA();
             factory.createProductB();
