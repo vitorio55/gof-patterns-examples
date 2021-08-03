@@ -12,11 +12,14 @@ public class FactoryMethodExample implements Example {
     public void runExample() {
         System.out.println("==> Running Factory Method Example");
 
+        System.out.println("* Instantiating our concrete Creator classes...");
         List<Creator> creatorsList = List.of(
                 new ConcreteCreatorA(),
                 new ConcreteCreatorB()
         );
 
+        System.out.println("* Each of our Creator classes will now create their product and make them doStuff()...");
         creatorsList.forEach(Creator::createProductAndDoStuff);
+        System.out.println("");
     }
 }
