@@ -1,4 +1,4 @@
-package com.learning.gofpatterns.creational.builder.bloch;
+package com.learning.gofpatterns.creational.builder.extra.bloch;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

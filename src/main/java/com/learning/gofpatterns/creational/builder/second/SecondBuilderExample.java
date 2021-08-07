@@ -6,7 +6,7 @@ import com.learning.gofpatterns.creational.builder.second.builders.WoodHouseBuil
 import com.learning.gofpatterns.creational.builder.second.directors.Director;
 import com.learning.gofpatterns.creational.builder.second.products.House;
 
-public class BuilderExample implements Example {
+public class SecondBuilderExample implements Example {
     @Override
     public void runExample() {
         System.out.println("==> Running Second Builder Example");

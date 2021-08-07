@@ -5,7 +5,7 @@ import com.learning.gofpatterns.creational.builder.first.builders.StructureBuild
 import com.learning.gofpatterns.creational.builder.first.entities.Director;
 import com.learning.gofpatterns.creational.builder.first.entities.Structure;
 
-public class BuilderExample implements Example {
+public class FirstBuilderExample implements Example {
     @Override
     public void runExample() {
         System.out.println("==> Running First Builder Example");
