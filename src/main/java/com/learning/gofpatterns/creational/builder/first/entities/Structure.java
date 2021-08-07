@@ -1,4 +1,4 @@
-package com.learning.gofpatterns.creational.builder.entities;
+package com.learning.gofpatterns.creational.builder.first.entities;
 
 import lombok.Getter;
 import lombok.Setter;

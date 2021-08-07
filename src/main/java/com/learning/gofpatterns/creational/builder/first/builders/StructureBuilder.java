@@ -1,6 +1,6 @@
-package com.learning.gofpatterns.creational.builder.builders;
+package com.learning.gofpatterns.creational.builder.first.builders;
 
-import com.learning.gofpatterns.creational.builder.entities.Structure;
+import com.learning.gofpatterns.creational.builder.first.entities.Structure;
 
 public class StructureBuilder implements Builder {
     String className;

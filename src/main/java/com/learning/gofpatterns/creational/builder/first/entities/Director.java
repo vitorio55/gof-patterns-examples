@@ -1,6 +1,6 @@
-package com.learning.gofpatterns.creational.builder.entities;
+package com.learning.gofpatterns.creational.builder.first.entities;
 
-import com.learning.gofpatterns.creational.builder.builders.Builder;
+import com.learning.gofpatterns.creational.builder.first.builders.Builder;
 
 public class Director {
     String className;
@@ -51,7 +51,7 @@ public class Director {
             .doors("275")
             .floors("15")
             .rooms("220");
-        System.out.printf("[%s] The Director built an appartment building: \n", this.className);
+        System.out.printf("[%s] The Director built an apartment building: \n", this.className);
     }
 
     public String getClassName() {

@@ -1,14 +1,14 @@
-package com.learning.gofpatterns.creational.builder;
+package com.learning.gofpatterns.creational.builder.first;
 
 import com.learning.gofpatterns.Example;
-import com.learning.gofpatterns.creational.builder.builders.StructureBuilder;
-import com.learning.gofpatterns.creational.builder.entities.Director;
-import com.learning.gofpatterns.creational.builder.entities.Structure;
+import com.learning.gofpatterns.creational.builder.first.builders.StructureBuilder;
+import com.learning.gofpatterns.creational.builder.first.entities.Director;
+import com.learning.gofpatterns.creational.builder.first.entities.Structure;
 
 public class BuilderExample implements Example {
     @Override
     public void runExample() {
-        System.out.println("==> Running Builder Example");
+        System.out.println("==> Running First Builder Example");
 
         // For this example we will take a different approach (in contrast to the Factory Method and Abstract
         // Factory patterns) to exemplify the pattern. We will use classes that represent something in the real world.

@@ -1,4 +1,4 @@
-package com.learning.gofpatterns.creational.builder.builders;
+package com.learning.gofpatterns.creational.builder.first.builders;
 
 public interface Builder {
     Builder reset();
