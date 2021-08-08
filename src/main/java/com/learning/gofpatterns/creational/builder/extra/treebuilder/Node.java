@@ -26,4 +26,20 @@ public class Node {
     public void setChildren(List<Node> children) {
         this.children = children;
     }
+
+    public void printNode(int indentation) {
+        StringBuilder spaces = new StringBuilder();
+
+        for (int i=0; i < indentation; i++) {
+            spaces.append("  | ");
+        }
+
+        System.out.println(spaces + this.name);
+
+        if (children == null) return;
+
+        children.forEach(node -> {
+            node.printNode(indentation + 1);
+        });
+    }
 }

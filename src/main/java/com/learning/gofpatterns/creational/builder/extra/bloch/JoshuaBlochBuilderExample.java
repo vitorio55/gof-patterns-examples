@@ -24,6 +24,6 @@ public class JoshuaBlochBuilderExample implements Example {
 
         System.out.println(car.toString());
 
-        System.out.println("Make sure to check the Bloch's Builder pattern unit tests on this project!");
+        System.out.println("Make sure to check the Bloch's Builder pattern unit tests on this project!\n");
     }
 }

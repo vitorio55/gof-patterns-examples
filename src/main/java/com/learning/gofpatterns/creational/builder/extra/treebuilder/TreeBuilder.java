@@ -1,8 +1,12 @@
 package com.learning.gofpatterns.creational.builder.extra.treebuilder;
 
+import java.util.Objects;
+
 public class TreeBuilder {
-    private Node el;
-    private TreeBuilder parent;
+    private final Node el;
+    private final TreeBuilder parent;
+
+    // Recursive Tree Builder examples
 
     private TreeBuilder(Node el, TreeBuilder parent) {
         this.el = el;
@@ -32,11 +36,7 @@ public class TreeBuilder {
         if (el.getChildren().isEmpty()) {
             el.setChildren(null);
         }
-        if (this.parent == null) {
-            return this;
-        } else {
-            return this.parent;
-        }
+        return Objects.requireNonNullElse(this.parent, this);
     }
 
     public Node build() {

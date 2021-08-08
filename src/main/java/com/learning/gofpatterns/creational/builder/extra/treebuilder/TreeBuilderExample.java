@@ -26,6 +26,8 @@ public class TreeBuilderExample implements Example {
                 .end()
                 .build();
 
-        System.out.println("Tree built.");
+        System.out.println("Tree built:\n");
+        nodeTree.printNode(0);
+        System.out.println("");
     }
 }

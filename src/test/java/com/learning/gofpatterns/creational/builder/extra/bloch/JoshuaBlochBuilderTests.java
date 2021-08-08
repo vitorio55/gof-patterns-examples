@@ -32,11 +32,23 @@ public class JoshuaBlochBuilderTests {
     @DisplayName("Validation - validate() throws exception when creating an object in an invalid state")
     public void invalid_state_throws_exception() {
         // Here invalid state means a Car without its required attributes
+        assertThrows(IllegalStateException.class, () -> new Car.Builder(null, null)
+                .color(Color.RED)
+                .year(1995)
+                .seats(4)
+                .doors(4)
+                .build());
 
-        String engine = null;
-        String maker = null;
+        // No maker should raise exception
+        assertThrows(IllegalStateException.class, () -> new Car.Builder("1.6", null)
+                .color(Color.RED)
+                .year(1995)
+                .seats(4)
+                .doors(4)
+                .build());
 
-        assertThrows(IllegalStateException.class, () -> new Car.Builder(engine, maker)
+        // No engine should raise exception
+        assertThrows(IllegalStateException.class, () -> new Car.Builder(null, "Ford")
                 .color(Color.RED)
                 .year(1995)
                 .seats(4)

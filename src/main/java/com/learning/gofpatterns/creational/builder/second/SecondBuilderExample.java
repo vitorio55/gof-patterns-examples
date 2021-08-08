@@ -32,6 +32,6 @@ public class SecondBuilderExample implements Example {
         house = concreteHouseBuilder.getHouse();
         System.out.println(house.toString());
 
-        System.out.println("Make sure to check the second Builder pattern unit tests on this project!");
+        System.out.println("Make sure to check the second Builder pattern unit tests on this project!\n");
     }
 }
