@@ -1,14 +1,14 @@
-package com.learning.gofpatterns.creational.prototype.multilevelcopy;
+package com.learning.gofpatterns.creational.prototype.deepcopy_interface;
 
 import com.learning.gofpatterns.Example;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrototypeMultilevelCopyExample implements Example {
+public class PrototypeDeepCopyInterfaceExample implements Example {
     @Override
     public void runExample() {
-        System.out.println("==> Running Prototype Example that handles multilevel copying");
+        System.out.println("==> Running Prototype Example using interface that handles deep copying");
 
         List<Prototype> concretePrototypes = new ArrayList<>();
         List<Prototype> clonedList = new ArrayList<>();

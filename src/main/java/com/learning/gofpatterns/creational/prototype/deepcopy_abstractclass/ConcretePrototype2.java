@@ -1,4 +1,4 @@
-package com.learning.gofpatterns.creational.prototype.using_abstractclass;
+package com.learning.gofpatterns.creational.prototype.deepcopy_abstractclass;
 
 public class ConcretePrototype2 extends Prototype {
     float someFloat;

@@ -6,9 +6,9 @@ import com.learning.gofpatterns.creational.builder.extra.treebuilder.TreeBuilder
 import com.learning.gofpatterns.creational.builder.first.FirstBuilderExample;
 import com.learning.gofpatterns.creational.builder.second.SecondBuilderExample;
 import com.learning.gofpatterns.creational.factory_method.FactoryMethodExample;
-import com.learning.gofpatterns.creational.prototype.multilevelcopy.PrototypeMultilevelCopyExample;
-import com.learning.gofpatterns.creational.prototype.using_abstractclass.PrototypeUsingAbstractClassExample;
-import com.learning.gofpatterns.creational.prototype.using_interface.PrototypeUsingInterfaceExample;
+import com.learning.gofpatterns.creational.prototype.deepcopy_interface.PrototypeDeepCopyInterfaceExample;
+import com.learning.gofpatterns.creational.prototype.deepcopy_abstractclass.PrototypeDeepCopyAbstractClassExample;
+import com.learning.gofpatterns.creational.prototype.custom_interface.PrototypeCustomInterfaceExample;
 
 import java.util.List;
 
@@ -31,9 +31,9 @@ public class Main {
                 new TreeBuilderExample(),
 
                 // Prototype patter examples
-                new PrototypeUsingAbstractClassExample(),
-                new PrototypeUsingInterfaceExample(),
-                new PrototypeMultilevelCopyExample()
+                new PrototypeCustomInterfaceExample(),
+                new PrototypeDeepCopyAbstractClassExample(),
+                new PrototypeDeepCopyInterfaceExample()
         );
         examples.forEach(Example::runExample);
     }

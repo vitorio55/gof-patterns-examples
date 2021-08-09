@@ -1,4 +1,4 @@
-package com.learning.gofpatterns.creational.prototype.multilevelcopy;
+package com.learning.gofpatterns.creational.prototype.deepcopy_interface;
 
 public class AnEntity implements Prototype {
     int number;

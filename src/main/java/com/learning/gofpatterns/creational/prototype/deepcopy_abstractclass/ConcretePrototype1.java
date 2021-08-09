@@ -1,7 +1,7 @@
-package com.learning.gofpatterns.creational.prototype.using_abstractclass;
+package com.learning.gofpatterns.creational.prototype.deepcopy_abstractclass;
 
 public class ConcretePrototype1 extends Prototype {
-    String stringZero;
+    FirstLevelInnerClass firstLevel;
     String stringOne;
     String stringTwo;
     int intZero;
@@ -10,11 +10,9 @@ public class ConcretePrototype1 extends Prototype {
 
     @Override
     public Prototype clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-
-    public void setStringZero(String stringZero) {
-        this.stringZero = stringZero;
+        ConcretePrototype1 clone = (ConcretePrototype1) super.clone();
+        clone.setFirstLevel(this.firstLevel.clone()); // Manual deep copying
+        return clone;
     }
 
     public void setStringOne(String stringOne) {
@@ -37,10 +35,18 @@ public class ConcretePrototype1 extends Prototype {
         this.intTwo = intTwo;
     }
 
+    public FirstLevelInnerClass getFirstLevel() {
+        return firstLevel;
+    }
+
+    public void setFirstLevel(FirstLevelInnerClass firstLevel) {
+        this.firstLevel = firstLevel;
+    }
+
     @Override
     public String toString() {
         return "ConcretePrototype1{" +
-                "stringZero='" + stringZero + '\'' +
+                "firstLevel=" + firstLevel +
                 ", stringOne='" + stringOne + '\'' +
                 ", stringTwo='" + stringTwo + '\'' +
                 ", intZero=" + intZero +

@@ -1,16 +1,15 @@
-package com.learning.gofpatterns.creational.prototype.using_interface;
+package com.learning.gofpatterns.creational.prototype.custom_interface;
 
 import com.learning.gofpatterns.Example;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrototypeUsingInterfaceExample implements Example {
+public class PrototypeCustomInterfaceExample implements Example {
     @Override
     public void runExample() {
-        System.out.println("==> Running Prototype Example that uses a base interface");
+        System.out.println("==> Running Prototype Example that uses a custom base interface (not Java's Cloneable)");
 
-        // This example DOESN'T use the Cloneable interface provided by Java.
         // Clone operation is implemented manually.
 
         List<Prototype> concretePrototypes = new ArrayList<>();

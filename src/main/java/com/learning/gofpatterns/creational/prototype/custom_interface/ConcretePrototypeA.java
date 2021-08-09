@@ -1,4 +1,4 @@
-package com.learning.gofpatterns.creational.prototype.using_interface;
+package com.learning.gofpatterns.creational.prototype.custom_interface;
 
 public class ConcretePrototypeA implements Prototype {
     int number;
