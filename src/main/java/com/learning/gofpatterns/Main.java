@@ -9,6 +9,7 @@ import com.learning.gofpatterns.creational.factory_method.FactoryMethodExample;
 import com.learning.gofpatterns.creational.prototype.deepcopy_interface.PrototypeDeepCopyInterfaceExample;
 import com.learning.gofpatterns.creational.prototype.deepcopy_abstractclass.PrototypeDeepCopyAbstractClassExample;
 import com.learning.gofpatterns.creational.prototype.custom_interface.PrototypeCustomInterfaceExample;
+import com.learning.gofpatterns.creational.singleton.SingletonExample;
 
 import java.util.List;
 
@@ -33,7 +34,9 @@ public class Main {
                 // Prototype patter examples
                 new PrototypeCustomInterfaceExample(),
                 new PrototypeDeepCopyAbstractClassExample(),
-                new PrototypeDeepCopyInterfaceExample()
+                new PrototypeDeepCopyInterfaceExample(),
+
+                new SingletonExample()
         );
         examples.forEach(Example::runExample);
     }

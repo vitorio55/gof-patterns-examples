@@ -1,5 +1,6 @@
 package com.learning.gofpatterns.creational.builder.first;
 
+import com.learning.gofpatterns.BannerPrinter;
 import com.learning.gofpatterns.Example;
 import com.learning.gofpatterns.creational.builder.first.builders.StructureBuilder;
 import com.learning.gofpatterns.creational.builder.first.entities.Director;
@@ -8,6 +9,8 @@ import com.learning.gofpatterns.creational.builder.first.entities.Structure;
 public class FirstBuilderExample implements Example {
     @Override
     public void runExample() {
+        BannerPrinter.printBuilderBanner();
+
         System.out.println("==> Running First Builder Example");
 
         // For this example we will take a different approach (in contrast to the Factory Method and Abstract

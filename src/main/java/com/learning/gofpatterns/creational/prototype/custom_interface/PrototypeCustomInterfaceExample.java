@@ -1,5 +1,6 @@
 package com.learning.gofpatterns.creational.prototype.custom_interface;
 
+import com.learning.gofpatterns.BannerPrinter;
 import com.learning.gofpatterns.Example;
 
 import java.util.ArrayList;
@@ -8,6 +9,8 @@ import java.util.List;
 public class PrototypeCustomInterfaceExample implements Example {
     @Override
     public void runExample() {
+        BannerPrinter.printPrototypeBanner();
+
         System.out.println("==> Running Prototype Example that uses a custom base interface (not Java's Cloneable)");
 
         // Clone operation is implemented manually.
