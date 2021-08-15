@@ -32,6 +32,6 @@ public class SingletonExample implements Example {
         System.out.println("This is the reference to a Singleton used at the beginning...");
         System.out.println(singleton + "\n");
 
-        System.out.println("As we can see, actually there isn't a reference to another Singleton, they all reference the same instance.");
+        System.out.println("As we can see, actually there isn't a reference to another Singleton, they all reference the same instance.\n");
     }
 }

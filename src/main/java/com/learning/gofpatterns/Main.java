@@ -10,6 +10,9 @@ import com.learning.gofpatterns.creational.prototype.deepcopy_interface.Prototyp
 import com.learning.gofpatterns.creational.prototype.deepcopy_abstractclass.PrototypeDeepCopyAbstractClassExample;
 import com.learning.gofpatterns.creational.prototype.custom_interface.PrototypeCustomInterfaceExample;
 import com.learning.gofpatterns.creational.singleton.SingletonExample;
+import com.learning.gofpatterns.structural.adapter.using_inheritance.AdapterInheritanceExample;
+import com.learning.gofpatterns.structural.adapter.using_inheritance_and_interface.AdapterInheritanceAndInterfaceExample;
+import com.learning.gofpatterns.structural.adapter.using_interface.AdapterInterfaceExample;
 
 import java.util.List;
 
@@ -36,7 +39,13 @@ public class Main {
                 new PrototypeDeepCopyAbstractClassExample(),
                 new PrototypeDeepCopyInterfaceExample(),
 
-                new SingletonExample()
+                new SingletonExample(),
+
+                // Structural Patterns
+                // ---------------------------------------------------------------------------
+                new AdapterInheritanceExample(),
+                new AdapterInheritanceAndInterfaceExample(),
+                new AdapterInterfaceExample()
         );
         examples.forEach(Example::runExample);
     }
