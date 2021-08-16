@@ -13,6 +13,8 @@ import com.learning.gofpatterns.creational.singleton.SingletonExample;
 import com.learning.gofpatterns.structural.adapter.using_inheritance.AdapterInheritanceExample;
 import com.learning.gofpatterns.structural.adapter.using_inheritance_and_interface.AdapterInheritanceAndInterfaceExample;
 import com.learning.gofpatterns.structural.adapter.using_interface.AdapterInterfaceExample;
+import com.learning.gofpatterns.structural.bridge.using_functional_interface.BridgeFunctionalInterfaceExample;
+import com.learning.gofpatterns.structural.bridge.using_interface.BridgeInterfaceExample;
 
 import java.util.List;
 
@@ -45,7 +47,10 @@ public class Main {
                 // ---------------------------------------------------------------------------
                 new AdapterInheritanceExample(),
                 new AdapterInheritanceAndInterfaceExample(),
-                new AdapterInterfaceExample()
+                new AdapterInterfaceExample(),
+
+                new BridgeFunctionalInterfaceExample(),
+                new BridgeInterfaceExample()
         );
         examples.forEach(Example::runExample);
     }

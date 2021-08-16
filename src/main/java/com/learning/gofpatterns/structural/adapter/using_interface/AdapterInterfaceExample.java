@@ -34,5 +34,6 @@ public class AdapterInterfaceExample implements Example {
         Modem modem = new Modem(cable);
         modem.connect();
         modem.transferDataThroughAir();
+        System.out.println();
     }
 }
