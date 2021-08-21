@@ -30,7 +30,7 @@ public class Node {
     public void printNode(int indentation) {
         StringBuilder spaces = new StringBuilder();
 
-        for (int i=0; i < indentation; i++) {
+        for (int i = 0; i < indentation; i++) {
             spaces.append("  | ");
         }
 
