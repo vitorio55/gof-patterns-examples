@@ -85,6 +85,20 @@ public class BannerPrinter {
             """);
     }
 
+    public static void printDecoratorBanner() {
+        System.out.println("""
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\s
+            |                                                                               |\s
+            |       dBBBBb  dBBBP  dBBBP  dBBBBP dBBBBBb dBBBBBb  dBBBBBBP dBBBBP dBBBBBb   |\s
+            |         dBP               dBP.BP      dBP      BB          dBP.BP      dBP    |\s
+            |    dBP dBP dBBP   dBP    dBP.BP   dBBBBK   dBP BB   dBP   dBP.BP   dBBBBK     |\s
+            |   dBP dBP dBP    dBP    dBP.BP   dBP  BB  dBP  BB  dBP   dBP.BP   dBP  BB     |\s
+            |  dBBBBBP dBBBBP dBBBBP dBBBBP   dBP  dB' dBBBBBBB dBP   dBBBBP   dBP  dB'     |\s
+            |                                                                               |\s
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\s
+            """);
+    }
+
     public static void printFactoryMethodBanner() {
         System.out.println("""
             -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\s

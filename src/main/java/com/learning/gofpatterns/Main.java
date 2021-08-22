@@ -16,6 +16,7 @@ import com.learning.gofpatterns.structural.adapter.using_interface.AdapterInterf
 import com.learning.gofpatterns.structural.bridge.using_functional_interface.BridgeFunctionalInterfaceExample;
 import com.learning.gofpatterns.structural.bridge.using_interface.BridgeInterfaceExample;
 import com.learning.gofpatterns.structural.composite.CompositeExample;
+import com.learning.gofpatterns.structural.decorator.DecoratorExample;
 
 import java.util.List;
 
@@ -53,7 +54,9 @@ public class Main {
                 new BridgeFunctionalInterfaceExample(),
                 new BridgeInterfaceExample(),
 
-                new CompositeExample()
+                new CompositeExample(),
+
+                new DecoratorExample()
         );
         examples.forEach(Example::runExample);
     }

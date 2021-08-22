@@ -53,5 +53,6 @@ public class CompositeExample implements Example {
 
         System.out.println("Displaying items tree:");
         compositeItemA.printItem(0);
+        System.out.println();
     }
 }
