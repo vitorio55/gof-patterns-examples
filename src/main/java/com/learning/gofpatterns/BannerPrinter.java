@@ -99,6 +99,32 @@ public class BannerPrinter {
             """);
     }
 
+    public static void printFacadeBanner() {
+        System.out.println("""
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\s
+            |                                                                                                                         |\s
+            |                                                                                          dddddddd                       |\s
+            |        ffffffffffffffff                                                                  d::::::d                       |\s
+            |       f::::::::::::::::f                                                                 d::::::d                       |\s
+            |      f::::::::::::::::::f                                                                d::::::d                       |\s
+            |      f::::::fffffff:::::f                                                                d:::::d                        |\s
+            |      f:::::f       ffffffaaaaaaaaaaaaa      cccccccccccccccc  aaaaaaaaaaaaa      ddddddddd:::::d     eeeeeeeeeeee       |\s
+            |      f:::::f             a::::::::::::a   cc:::::::::::::::c  a::::::::::::a   dd::::::::::::::d   ee::::::::::::ee     |\s
+            |     f:::::::ffffff       aaaaaaaaa:::::a c:::::::::::::::::c  aaaaaaaaa:::::a d::::::::::::::::d  e::::::eeeee:::::ee   |\s
+            |     f::::::::::::f                a::::ac:::::::cccccc:::::c           a::::ad:::::::ddddd:::::d e::::::e     e:::::e   |\s
+            |     f::::::::::::f         aaaaaaa:::::ac::::::c     ccccccc    aaaaaaa:::::ad::::::d    d:::::d e:::::::eeeee::::::e   |\s
+            |     f:::::::ffffff       aa::::::::::::ac:::::c               aa::::::::::::ad:::::d     d:::::d e:::::::::::::::::e    |\s
+            |      f:::::f            a::::aaaa::::::ac:::::c              a::::aaaa::::::ad:::::d     d:::::d e::::::eeeeeeeeeee     |\s
+            |      f:::::f           a::::a    a:::::ac::::::c     ccccccca::::a    a:::::ad:::::d     d:::::d e:::::::e              |\s
+            |     f:::::::f          a::::a    a:::::ac:::::::cccccc:::::ca::::a    a:::::ad::::::ddddd::::::dde::::::::e             |\s
+            |     f:::::::f          a:::::aaaa::::::a c:::::::::::::::::ca:::::aaaa::::::a d:::::::::::::::::d e::::::::eeeeeeee     |\s
+            |     f:::::::f           a::::::::::aa:::a cc:::::::::::::::c a::::::::::aa:::a d:::::::::ddd::::d  ee:::::::::::::e     |\s
+            |     fffffffff            aaaaaaaaaa  aaaa   cccccccccccccccc  aaaaaaaaaa  aaaa  ddddddddd   ddddd    eeeeeeeeeeeeee     |\s
+            |                                                                                                                         |\s
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\s
+            """);
+    }
+
     public static void printFactoryMethodBanner() {
         System.out.println("""
             -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\s

@@ -55,5 +55,6 @@ public class DecoratorExample implements Example {
         third.setText(text);
 
         System.out.print("Result of a single call to the end of the text decorator stack:\n  " + third.getText());
+        System.out.println("\n");
     }
 }
