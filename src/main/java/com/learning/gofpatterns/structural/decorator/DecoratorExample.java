@@ -15,11 +15,11 @@ public class DecoratorExample implements Example {
         System.out.println("==> Running Decorator Example");
 
         System.out.println("""
-                For the Decorator Pattern demonstration, we will have a base entity that stores a text.
-                Using our decorators, we can think of layers that each decorator execute their string manipulation before
-                calling a lower member of the decorator stack. At the bottom of the stack, we have our simple base text
-                component, which just stores the final argument text as its own.
-                """);
+            For the Decorator Pattern demonstration, we will have a base entity that stores a text.
+            Using our decorators, we can think of layers that each decorator execute their string manipulation before
+            calling a lower member of the decorator stack. At the bottom of the stack, we have our simple base text
+            component, which just stores the final argument text as its own.
+            """);
 
         String text = "This is a simple text to demonstrate the functionality of the Decorator Pattern";
 

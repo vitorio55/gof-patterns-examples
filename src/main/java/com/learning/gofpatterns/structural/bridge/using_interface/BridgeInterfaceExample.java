@@ -12,11 +12,13 @@ public class BridgeInterfaceExample implements Example {
     public void runExample() {
         System.out.println("==> Running Bridge Example (using interface)");
 
-        System.out.println("Given that we have 2 videogame console types: XBox and Playstation");
-        System.out.println("And each of them can have 2 types of controllers: Wired and Wireless");
-        System.out.println("If we add more videogames and or controllers, our hierarchy would grow exponentially");
-        System.out.println("Instead of creating for instance PlaystationWiredController or XBoxWirelessController etc");
-        System.out.println("We can use the Bridge pattern to separate our problem into 2 different but related hierarchies\n");
+        System.out.println("""
+            Given that we have 2 videogame console types: XBox and Playstation
+            And each of them can have 2 types of controllers: Wired and Wireless
+            If we add more videogames and or controllers, our hierarchy would grow exponentially
+            Instead of creating for instance PlaystationWiredController or XBoxWirelessController etc
+            We can use the Bridge pattern to separate our problem into 2 different but related hierarchies
+            """);
 
         Playstation playstation = new Playstation();
         XBox xbox = new XBox();

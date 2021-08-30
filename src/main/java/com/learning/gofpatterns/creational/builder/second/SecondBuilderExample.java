@@ -11,9 +11,6 @@ public class SecondBuilderExample implements Example {
     public void runExample() {
         System.out.println("==> Running Second Builder Example");
 
-        // For this example we will take a different approach (in contrast to the Factory Method and Abstract
-        // Factory patterns) to exemplify the pattern. We will use classes that represent something in the real world.
-
         // Here our entity (House) is immutable. Our Concrete Builders create new Houses, but they never change.
 
         WoodHouseBuilder woodHouseBuilder = new WoodHouseBuilder();

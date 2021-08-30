@@ -12,15 +12,15 @@ public class FacadeExample implements Example {
         System.out.println("==> Running Facade Example");
 
         System.out.println("""
-                The Facade Pattern provides a simplified way of accessing complex subsystem of entities (eg. a lib) so
-                that the client code only needs to know how to interact with the facade, and not the subsystem.
-                A notable advantage of the Facade Pattern also is that the subsystem is decoupled from the client code.
-                If significant alterations are made to the subsystem (eg. major lib version change), only the facade
-                usually requires reworking.
+            The Facade Pattern provides a simplified way of accessing complex subsystem of entities (eg. a lib) so
+            that the client code only needs to know how to interact with the facade, and not the subsystem.
+            A notable advantage of the Facade Pattern also is that the subsystem is decoupled from the client code.
+            If significant alterations are made to the subsystem (eg. major lib version change), only the facade
+            usually requires reworking.
 
-                Here we have a VirtualStore class that is our facade. It encapsulates all the interaction with a
-                subsystem of entities, and provides only the necessary operations to the client code.
-                """);
+            Here we have a VirtualStore class that is our facade. It encapsulates all the interaction with a
+            subsystem of entities, and provides only the necessary operations to the client code.
+            """);
 
         VirtualStore virtualStore = new VirtualStore();
 
@@ -34,5 +34,6 @@ public class FacadeExample implements Example {
         userName = "buyer_user@somemail.com";
 
         virtualStore.buyItem(userName, itemCode, price);
+        System.out.println();
     }
 }

@@ -13,9 +13,6 @@ public class FirstBuilderExample implements Example {
 
         System.out.println("==> Running First Builder Example");
 
-        // For this example we will take a different approach (in contrast to the Factory Method and Abstract
-        // Factory patterns) to exemplify the pattern. We will use classes that represent something in the real world.
-
         StructureBuilder structureBuilder = new StructureBuilder();
         Structure mediumHouse = structureBuilder
                 .color("Green")

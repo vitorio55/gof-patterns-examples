@@ -18,6 +18,7 @@ import com.learning.gofpatterns.structural.bridge.using_interface.BridgeInterfac
 import com.learning.gofpatterns.structural.composite.CompositeExample;
 import com.learning.gofpatterns.structural.decorator.DecoratorExample;
 import com.learning.gofpatterns.structural.facade.FacadeExample;
+import com.learning.gofpatterns.structural.flyweight.FlyweightExample;
 
 import java.util.List;
 
@@ -59,7 +60,9 @@ public class Main {
 
                 new DecoratorExample(),
 
-                new FacadeExample()
+                new FacadeExample(),
+
+                new FlyweightExample()
         );
         examples.forEach(Example::runExample);
     }
