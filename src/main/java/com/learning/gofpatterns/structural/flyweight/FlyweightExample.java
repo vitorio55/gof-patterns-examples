@@ -28,8 +28,8 @@ public class FlyweightExample implements Example {
             whole state of an enemy.
             """);
 
-        String humanMaleTexture = "<SOME_HEAVY_MALE_TEXTURE>";
-        String humanFemaleTexture = "<SOME_HEAVY_FEMALE_TEXTURE>";
+        String humanMaleTexture = "<SOME_LARGE_MALE_TEXTURE>";
+        String humanFemaleTexture = "<SOME_LARGE_FEMALE_TEXTURE>";
 
         System.out.println("Here we have 2 textures that will be used by many different enemy instances: ");
         System.out.println("  " + humanMaleTexture);
@@ -56,6 +56,13 @@ public class FlyweightExample implements Example {
 
         System.out.println("Enemies created:");
         enemies.forEach(enemy -> System.out.println(enemy.toString()));
+
+        System.out.println("""
+            \nWe can even add some logic to the Flyweight (in this case drawing of enemies) class. It is able to handle
+            the execution of actions that require the full state because we pass the remaining needed info through
+            parameters in the call.
+            """);
+        enemies.forEach(Enemy::draw);
 
         System.out.println("""
             \nFinally, we can verify that our Flyweight Factory (EnemyTypeFactory) has only 2 textures created, even

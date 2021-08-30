@@ -15,6 +15,10 @@ public class Enemy {
         this.power = power;
     }
 
+    public void draw() {
+        this.type.draw(name, positionX, positionY);
+    }
+
     @Override
     public String toString() {
         return "Enemy{" +

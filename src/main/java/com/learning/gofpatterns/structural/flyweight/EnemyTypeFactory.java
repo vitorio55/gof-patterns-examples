@@ -9,7 +9,7 @@ public class EnemyTypeFactory {
     public static EnemyType getEnemyType(EnemyTypeName typeName, String texture) {
         EnemyType desiredEnemyType = cachedEnemyTypes.stream()
             .filter(enemyType -> enemyType.getTypeName().equals(typeName)
-                       && enemyType.getTexture().equals(texture))
+                                 && enemyType.getTexture().equals(texture))
             .findAny()
             .orElse(null);
 
