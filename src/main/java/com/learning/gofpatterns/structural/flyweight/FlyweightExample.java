@@ -71,5 +71,6 @@ public class FlyweightExample implements Example {
             """);
 
         EnemyTypeFactory.printCachedEnemyTypes();
+        System.out.println("");
     }
 }

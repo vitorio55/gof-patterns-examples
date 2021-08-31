@@ -182,6 +182,20 @@ public class BannerPrinter {
             -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\s
             """);
     }
+    public static void printProxyBanner() {
+        System.out.println("""
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\s
+            |                                                                   |\s
+            |   8b,dPPYba,   8b,dPPYba,   ,adPPYba,  8b,     ,d8  8b       d8   |\s
+            |   88P'    "8a  88P'   "Y8  a8"     "8a  `Y8, ,8P'   `8b     d8'   |\s
+            |   88       d8  88          8b       d8    )888(      `8b   d8'    |\s
+            |   88b,   ,a8"  88          "8a,   ,a8"  ,d8" "8b,     `8b,d8'     |\s
+            |   88`YbbdP"'   88           `"YbbdP"'  8P'     `Y8      Y88'      |\s
+            |   88                                                    d8'       |\s
+            |   88                                                   d8'        |\s
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\s
+            """);
+    }
 
     public static void printSingletonBanner() {
         System.out.println("""

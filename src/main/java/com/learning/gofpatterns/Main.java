@@ -19,6 +19,7 @@ import com.learning.gofpatterns.structural.composite.CompositeExample;
 import com.learning.gofpatterns.structural.decorator.DecoratorExample;
 import com.learning.gofpatterns.structural.facade.FacadeExample;
 import com.learning.gofpatterns.structural.flyweight.FlyweightExample;
+import com.learning.gofpatterns.structural.proxy.ProxyExample;
 
 import java.util.List;
 
@@ -29,40 +30,38 @@ public class Main {
                 // ---------------------------------------------------------------------------
                 new FactoryMethodExample(),
                 new AbstractFactoryExample(),
-
-                // There are two GoF Builder Pattern examples here, they are slightly different
-                new FirstBuilderExample(), // This builds a mutable Structure object
-                new SecondBuilderExample(), // This builds an immutable House object
-
-                // Extra builder example (which is not a GoF Pattern)
+                // Builder examples
+                new FirstBuilderExample(),
+                new SecondBuilderExample(),
+                // Extra builder examples (non GoF Pattern)
                 new JoshuaBlochBuilderExample(),
-
-                // Extra tree builder example (which is not a GoF Pattern)
                 new TreeBuilderExample(),
-
-                // Prototype patter examples
+                // Prototype examples
                 new PrototypeCustomInterfaceExample(),
                 new PrototypeDeepCopyAbstractClassExample(),
                 new PrototypeDeepCopyInterfaceExample(),
-
+                // Singleton example
                 new SingletonExample(),
 
                 // Structural Patterns
                 // ---------------------------------------------------------------------------
+                // Adapter examples
                 new AdapterInheritanceExample(),
                 new AdapterInheritanceAndInterfaceExample(),
                 new AdapterInterfaceExample(),
-
+                // Bridge examples
                 new BridgeFunctionalInterfaceExample(),
                 new BridgeInterfaceExample(),
-
+                // Composite example
                 new CompositeExample(),
-
+                // Decorator example
                 new DecoratorExample(),
-
+                // Facade example
                 new FacadeExample(),
-
-                new FlyweightExample()
+                // Flyweight example
+                new FlyweightExample(),
+                // Proxy example
+                new ProxyExample()
         );
         examples.forEach(Example::runExample);
     }
