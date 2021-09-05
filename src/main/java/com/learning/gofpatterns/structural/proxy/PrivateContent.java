@@ -3,11 +3,11 @@ package com.learning.gofpatterns.structural.proxy;
 public class PrivateContent implements ContentAccess {
     private final String className;
     private String accessKey;
-    private final Content data;
+    private final PublicContent data;
 
     private static final String KEY = "ABC_123";
 
-    public PrivateContent(Content data) {
+    public PrivateContent(PublicContent data) {
         this.data = data;
         this.accessKey = "";
         className = this.getClass().getSimpleName();
@@ -30,10 +30,6 @@ public class PrivateContent implements ContentAccess {
             return;
         }
         this.setContent(data);
-    }
-
-    public String getAccessKey() {
-        return accessKey;
     }
 
     public void setAccessKey(String accessKey) {

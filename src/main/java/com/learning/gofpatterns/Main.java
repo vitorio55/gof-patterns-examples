@@ -1,5 +1,6 @@
 package com.learning.gofpatterns;
 
+import com.learning.gofpatterns.behavioral.chain_of_responsibility.ChainOfResponsibilityExample;
 import com.learning.gofpatterns.creational.abstract_factory.AbstractFactoryExample;
 import com.learning.gofpatterns.creational.builder.extra.bloch.JoshuaBlochBuilderExample;
 import com.learning.gofpatterns.creational.builder.extra.treebuilder.TreeBuilderExample;
@@ -61,7 +62,11 @@ public class Main {
                 // Flyweight example
                 new FlyweightExample(),
                 // Proxy example
-                new ProxyExample()
+                new ProxyExample(),
+
+                // Behavioral Patterns
+                // ---------------------------------------------------------------------------
+                new ChainOfResponsibilityExample()
         );
         examples.forEach(Example::runExample);
     }

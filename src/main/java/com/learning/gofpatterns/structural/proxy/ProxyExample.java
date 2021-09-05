@@ -24,7 +24,7 @@ public class ProxyExample implements Example {
         String data = "<SOME_CONTENT>";
         String correctKey = "ABC_123";
 
-        Content unsafeContent = new Content(data);
+        PublicContent unsafeContent = new PublicContent(data);
         System.out.println("Accessing unsafe content: " + unsafeContent.getContent());
 
         System.out.println("\nAttempting to access private content using wrong access key...");
@@ -35,5 +35,6 @@ public class ProxyExample implements Example {
         privateContent.setAccessKey(correctKey);
         String privateData = privateContent.getContent();
         System.out.println("Accessed private content: " + privateData);
+        System.out.println();
     }
 }

@@ -1,9 +1,9 @@
 package com.learning.gofpatterns.structural.proxy;
 
-public class Content implements ContentAccess {
+public class PublicContent implements ContentAccess {
     private String data;
 
-    public Content(String data) {
+    public PublicContent(String data) {
         this.data = data;
     }
 
