@@ -8,4 +8,9 @@ public class LevelThreeHandler extends LevelHandler {
         super(LEVEL_3);
         this.handledLevel = LEVEL_3;
     }
+
+    @Override
+    protected void customHandle() {
+        System.out.println("HANDLED LEVEL " + this.handledLevel);
+    }
 }

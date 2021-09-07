@@ -6,9 +6,11 @@ public abstract class LevelHandler {
     LevelHandler nextHandler;
     Levels handledLevel;
 
+    protected abstract void customHandle();
+
     void handle(Levels level) {
         if (level == this.handledLevel) {
-            System.out.println("HANDLED LEVEL " + this.handledLevel);
+            this.customHandle();
         } else if (this.nextHandler != null) {
                 this.nextHandler.handle(level);
         }
