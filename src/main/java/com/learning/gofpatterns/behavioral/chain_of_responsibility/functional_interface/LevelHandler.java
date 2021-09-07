@@ -1,4 +1,6 @@
-package com.learning.gofpatterns.behavioral.chain_of_responsibility;
+package com.learning.gofpatterns.behavioral.chain_of_responsibility.functional_interface;
+
+import com.learning.gofpatterns.behavioral.chain_of_responsibility.Levels;
 
 import java.util.Arrays;
 import java.util.EnumSet;
@@ -36,7 +38,7 @@ public interface LevelHandler {
         return defineHandling(levels, dummy -> System.out.println("  [ODD HANDLER TRIGGERED]"));
     }
 
-    static LevelHandler lessThanFourHandler(Levels... levels) {
-        return defineHandling(levels, dummy -> System.out.println("  [<4 HANDLER TRIGGERED]"));
+    static LevelHandler lessThanThreeHandler(Levels... levels) {
+        return defineHandling(levels, dummy -> System.out.println("  [<3 HANDLER TRIGGERED]"));
     }
 }
