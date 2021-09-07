@@ -21,10 +21,8 @@ public class ChainOfResponsibilityFunctionalInterfaceExample implements Example 
             Based on Wikipedia (en) Chain of Responsibility pattern Java example.
             """);
 
-        LevelHandler levelHandler = levelZeroHandler(LEVEL_0)
-                .nextHandler(evenLevelsHandler(LEVEL_0, LEVEL_2))
-                .nextHandler(oddLevelsHandler(LEVEL_1, LEVEL_3))
-                .nextHandler(lessThanThreeHandler(LEVEL_0, LEVEL_1, LEVEL_2));
+        LevelHandler levelHandler = levelZeroHandler().nextHandler(evenLevelsHandler())
+                .nextHandler(oddLevelsHandler()).nextHandler(lessThanThreeHandler());
 
         System.out.println("* Triggering chain of responsibility for LEVEL_0...");
         System.out.println("* Expected handlers to be triggered:");

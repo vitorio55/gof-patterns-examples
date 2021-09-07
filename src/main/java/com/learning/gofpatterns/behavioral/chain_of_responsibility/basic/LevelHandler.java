@@ -9,8 +9,7 @@ public abstract class LevelHandler {
     void handle(Levels level) {
         if (level == this.handledLevel) {
             System.out.println("HANDLED LEVEL " + this.handledLevel);
-        } else {
-            if (this.nextHandler != null)
+        } else if (this.nextHandler != null) {
                 this.nextHandler.handle(level);
         }
     }
