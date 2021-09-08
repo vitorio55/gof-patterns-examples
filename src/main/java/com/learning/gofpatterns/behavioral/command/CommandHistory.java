@@ -12,10 +12,6 @@ public class CommandHistory {
         history.add(0, command);
     }
 
-    public void removeCommand(Command command) {
-        history.remove(command);
-    }
-
     public List<Command> getHistory() {
         return this.history;
     }
