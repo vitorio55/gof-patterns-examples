@@ -2,6 +2,7 @@ package com.learning.gofpatterns;
 
 import com.learning.gofpatterns.behavioral.chain_of_responsibility.basic.ChainOfResponsibilityBasicExample;
 import com.learning.gofpatterns.behavioral.chain_of_responsibility.functional_interface.ChainOfResponsibilityFunctionalInterfaceExample;
+import com.learning.gofpatterns.behavioral.command.CommandExample;
 import com.learning.gofpatterns.creational.abstract_factory.AbstractFactoryExample;
 import com.learning.gofpatterns.creational.builder.extra.bloch.JoshuaBlochBuilderExample;
 import com.learning.gofpatterns.creational.builder.extra.treebuilder.TreeBuilderExample;
@@ -68,7 +69,9 @@ public class Main {
                 // Behavioral Patterns
                 // ---------------------------------------------------------------------------
                 new ChainOfResponsibilityFunctionalInterfaceExample(),
-                new ChainOfResponsibilityBasicExample()
+                new ChainOfResponsibilityBasicExample(),
+
+                new CommandExample()
         );
         examples.forEach(Example::runExample);
     }

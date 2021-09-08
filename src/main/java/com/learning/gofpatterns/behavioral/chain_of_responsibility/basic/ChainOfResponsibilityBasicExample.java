@@ -26,5 +26,6 @@ public class ChainOfResponsibilityBasicExample implements Example {
 
         System.out.println("* Triggering chain of responsibility for LEVEL_3...");
         entryHandler.handle(LEVEL_3);
+        System.out.println();
     }
 }
