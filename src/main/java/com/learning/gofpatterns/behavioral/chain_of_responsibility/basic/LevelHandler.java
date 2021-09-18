@@ -12,7 +12,7 @@ public abstract class LevelHandler {
         if (level == this.handledLevel) {
             this.customHandle();
         } else if (this.nextHandler != null) {
-                this.nextHandler.handle(level);
+            this.nextHandler.handle(level);
         }
     }
 
