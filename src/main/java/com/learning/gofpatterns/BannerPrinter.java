@@ -215,6 +215,23 @@ public class BannerPrinter {
             """);
     }
 
+    public static void printMediatorBanner() {
+        System.out.println("""
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\s
+            |                                                                                                                  |\s
+            |   .sSSSsSS SSsSSSSS  .sSSSSs.     .sSSSSs.     SSSSS  .sSSSSs.     .sSSSSSSSSSSSSSs.  .sSSSSs.     .sSSSSSSSs.   |\s
+            |   S SSS  SSS  SSSSS  S SSSSSSSs.  S SSSSSSSs.  S SSS  S SSSSSSSs.  SSSSS S SSS SSSSS  S SSSSSSSs.  S SSS SSSSS   |\s
+            |   S  SS   S   SSSSS  S  SS SSSS'  S  SS SSSSS  S  SS  S  SS SSSSS  SSSSS S  SS SSSSS  S  SS SSSSS  S  SS SSSS'   |\s
+            |   S..SS       SSSSS  S..SS        S..SS SSSSS  S..SS  S..SSsSSSSS  `:S:' S..SS `:S:'  S..SS SSSSS  S..SSsSSSa.   |\s
+            |   S:::S       SSSSS  S:::SSSS     S:::S SSSSS  S:::S  S:::S SSSSS        S:::S        S:::S SSSSS  S:::S SSSSS   |\s
+            |   S;;;S       SSSSS  S;;;S        S;;;S SSSSS  S;;;S  S;;;S SSSSS        S;;;S        S;;;S SSSSS  S;;;S SSSSS   |\s
+            |   S%%%S       SSSSS  S%%%S SSSSS  S%%%S SSSS'  S%%%S  S%%%S SSSSS        S%%%S        S%%%S SSSSS  S%%%S SSSSS   |\s
+            |   SSSSS       SSSSS  SSSSSsSS;:'  SSSSSsS;:'   SSSSS  SSSSS SSSSS        SSSSS        SSSSSsSSSSS  SSSSS SSSSS   |\s
+            |                                                                                                                  |\s
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\s
+            """);
+    }
+
     public static void printPrototypeBanner() {
         System.out.println("""
             -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\s

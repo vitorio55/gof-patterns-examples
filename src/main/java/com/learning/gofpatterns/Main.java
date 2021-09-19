@@ -4,6 +4,7 @@ import com.learning.gofpatterns.behavioral.chain_of_responsibility.basic.ChainOf
 import com.learning.gofpatterns.behavioral.chain_of_responsibility.functional_interface.ChainOfResponsibilityFunctionalInterfaceExample;
 import com.learning.gofpatterns.behavioral.command.CommandExample;
 import com.learning.gofpatterns.behavioral.interator.IteratorExample;
+import com.learning.gofpatterns.behavioral.mediator.MediatorExample;
 import com.learning.gofpatterns.creational.abstract_factory.AbstractFactoryExample;
 import com.learning.gofpatterns.creational.builder.extra.bloch.JoshuaBlochBuilderExample;
 import com.learning.gofpatterns.creational.builder.extra.treebuilder.TreeBuilderExample;
@@ -69,12 +70,15 @@ public class Main {
 
                 // Behavioral Patterns
                 // ---------------------------------------------------------------------------
+                // Chain of Responsibility examples
                 new ChainOfResponsibilityFunctionalInterfaceExample(),
                 new ChainOfResponsibilityBasicExample(),
-
+                // Command example
                 new CommandExample(),
-
-                new IteratorExample()
+                // Iterator example
+                new IteratorExample(),
+                // Mediator example
+                new MediatorExample()
         );
         examples.forEach(Example::runExample);
     }
