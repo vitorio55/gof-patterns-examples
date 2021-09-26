@@ -20,14 +20,6 @@ public class CompositeItem extends PricedItem {
         this.items = items;
     }
 
-    public void addItem(PricedItem item) {
-        this.items.add(item);
-    }
-
-    public void removeItem(PricedItem item) {
-        this.items.remove(item);
-    }
-
     @Override
     public float getPrice() {
         AtomicReference<Float> total = new AtomicReference<>((float) 0);

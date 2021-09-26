@@ -7,6 +7,7 @@ import com.learning.gofpatterns.behavioral.interator.IteratorExample;
 import com.learning.gofpatterns.behavioral.mediator.MediatorExample;
 import com.learning.gofpatterns.behavioral.memento.MementoExample;
 import com.learning.gofpatterns.behavioral.observer.ObserverExample;
+import com.learning.gofpatterns.behavioral.state.StateExample;
 import com.learning.gofpatterns.creational.abstract_factory.AbstractFactoryExample;
 import com.learning.gofpatterns.creational.builder.extra.bloch.JoshuaBlochBuilderExample;
 import com.learning.gofpatterns.creational.builder.extra.treebuilder.TreeBuilderExample;
@@ -84,7 +85,9 @@ public class Main {
                 // Memento example
                 new MementoExample(),
                 // Observer example
-                new ObserverExample()
+                new ObserverExample(),
+                // State example
+                new StateExample()
         );
         examples.forEach(Example::runExample);
     }
