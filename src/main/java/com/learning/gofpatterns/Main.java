@@ -9,6 +9,7 @@ import com.learning.gofpatterns.behavioral.memento.MementoExample;
 import com.learning.gofpatterns.behavioral.observer.ObserverExample;
 import com.learning.gofpatterns.behavioral.state.StateExample;
 import com.learning.gofpatterns.behavioral.strategy.StrategyExample;
+import com.learning.gofpatterns.behavioral.template_method.TemplateMethodExample;
 import com.learning.gofpatterns.creational.abstract_factory.AbstractFactoryExample;
 import com.learning.gofpatterns.creational.builder.extra.bloch.JoshuaBlochBuilderExample;
 import com.learning.gofpatterns.creational.builder.extra.treebuilder.TreeBuilderExample;
@@ -90,7 +91,9 @@ public class Main {
                 // State example
                 new StateExample(),
                 // Strategy example
-                new StrategyExample()
+                new StrategyExample(),
+                // Template Method example
+                new TemplateMethodExample()
         );
         examples.forEach(Example::runExample);
     }
